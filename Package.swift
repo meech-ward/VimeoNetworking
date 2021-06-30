@@ -24,7 +24,12 @@ let package = Package(
         .target(
             name: "VimeoNetworking",
             dependencies: [],
-            path: "Sources"
+            path: "Sources",
+            exclude: [
+              "Shared/ThirdParty/AFNetworking/README.md", 
+              "Shared/ThirdParty/AFNetworking/LICENSE", 
+              "Resources/digicert-sha2.cer"
+              ]
             ),
         .testTarget(
             name: "VimeoNetworkingTests",
